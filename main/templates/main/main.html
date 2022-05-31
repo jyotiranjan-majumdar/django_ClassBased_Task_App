@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Notes app</title>
+
+    <style>
+        body{
+            background-color:lightskyblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 50px;
+        }
+
+
+        h1,h2,h3,h4,h5,h6
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: aliceblue;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 21);
+        }
+
+        .main-header{
+            display: flex;
+            justify-content: space-between;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, rgba(19,0,36,1) 0%, rgba(121,9,94,0.9196720924698004) 71%, rgba(0,194,255,1) 100%);
+        }
+
+        .main-header a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .task-items-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: aliceblue;
+            border-top: 1px solid black;
+        }
+
+        .task-wrapper{
+           
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* padding: 15px; */
+            background-color: aliceblue;
+            border-top: 1px solid white;
+            margin-top: 5px;
+
+        }
+
+        .task-title{
+    
+            margin-top: 5px;
+        }
+
+        .task-title a{
+            text-decoration: none;
+            color: #4b5156;
+            margin-left: 10px;
+        }
+
+
+        .delete-link{
+            text-decoration: none;
+            font-weight: 900;
+            color: red;
+            font-size: 16px;
+            line-height: 0;
+        }
+
+        #search-add-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #add-link{
+            color: blue;
+            text-decoration: none;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea{
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        label{
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .button{
+            border: 1px solid rgb(41, 182, 237);
+            background-color: rgb(251, 251, 251);
+            color: rgb(73, 73, 73);
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none ;
+        }
+        .card-body{
+            padding: 20px;
+        }
+         
+        
+    </style>
+
+</head>
+<body>
+    
+
+
+
+
+
+<div class="container">
+
+
+    {% block body %}
+
+
+
+{% endblock  %}
+    
+
+</div>
+
+</body>
+</html>

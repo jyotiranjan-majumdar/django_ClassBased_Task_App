@@ -1,0 +1,5 @@
+{% extends 'main/main.html' %}
+{% block body %}
+<h1>tasks {{task.id}} : {{task.title}}</h1>
+<a href="{% url 'tasks' %}">main task</a>
+{% endblock %}
