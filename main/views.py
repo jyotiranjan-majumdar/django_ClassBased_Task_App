@@ -79,5 +79,4 @@ class DeleteView(DeleteView):
     success_url= reverse_lazy('tasks')
 
 
-# 55 minutes onwards
 
